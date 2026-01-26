@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Our Mission - ECOH">
+  <div class="page-content">
+    <div class="container">
+      <h1>Our Mission</h1>
+      <ul class="mission-list">
+        <li>To create accessible learning opportunities about employee and community ownership models</li>
+        <li>To foster meaningful connections between practitioners, advisors, researchers and interested parties</li>
+        <li>To develop and disseminate evidence-based resources on ownership alternatives in the Australian context</li>
+        <li>To cultivate a supportive ecosystem that enables the growth of employee and community-owned enterprises</li>
+        <li>To inform policy development through collaborative research and practical insights</li>
+      </ul>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .page-content {
+    padding: 4rem 2rem;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: #2563eb;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .mission-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mission-list li {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .mission-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 1.5rem;
+  }
+</style>

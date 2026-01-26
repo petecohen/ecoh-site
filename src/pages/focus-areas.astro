@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Focus Areas - ECOH">
+  <div class="page-content">
+    <div class="container">
+      <h1>Our Focus Areas</h1>
+
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h2>Employee Ownership</h2>
+          <p>EOTs, employee share schemes, worker cooperatives</p>
+        </div>
+
+        <div class="focus-card">
+          <h2>Community Ownership</h2>
+          <p>Cooperatives, mutual organisations, community enterprises</p>
+        </div>
+
+        <div class="focus-card">
+          <h2>Producer & Consumer Models</h2>
+          <p>Producer and consumer ownership structures</p>
+        </div>
+
+        <div class="focus-card">
+          <h2>Steward Ownership</h2>
+          <p>Steward ownership frameworks</p>
+        </div>
+
+        <div class="focus-card">
+          <h2>Democratic Governance</h2>
+          <p>Governance practices that support democratic participation and shared decision-making</p>
+        </div>
+
+        <div class="focus-card">
+          <h2>Business Succession</h2>
+          <p>Business succession planning through alternative ownership models</p>
+        </div>
+      </div>
+
+      <div class="approach-section">
+        <h2>Our Approach</h2>
+        <p>
+          ECOH operates as a collaborative community of practice, bringing together diverse
+          perspectives while maintaining a balance between community-building and creating
+          opportunities for practical implementation. We embrace systems thinking to understand the
+          complex relationships between ownership structures, governance, and economic outcomes.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .page-content {
+    padding: 4rem 2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: #2563eb;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .focus-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+  }
+
+  .focus-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  }
+
+  .focus-card h2 {
+    color: #2563eb;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .focus-card p {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .approach-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .approach-section h2 {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .approach-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+</style>
