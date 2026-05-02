@@ -57,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <h2>ECOH White Paper</h2>
       <h3>Employee and Community Ownership in Australia</h3>
-      <p class="release-date">Expected Release: April 2026</p>
+      <p class="release-date">Expected Release: May 2026</p>
 
       <p>
         We are developing a comprehensive white paper that captures insights and learnings from our
@@ -65,6 +65,24 @@ import Layout from '../layouts/Layout.astro';
         community ownership as underutilised tools for business succession and worker wealth-building
         in Australia.
       </p>
+
+      <aside class="pre-release-callout">
+        <h4>Pre-release summary now available</h4>
+        <p>
+          Ahead of the full release, we've published a pre-release executive summary together with
+          selected excerpts from the forthcoming paper.
+        </p>
+        <p>
+          <a
+            href="https://public-pc.s3.amazonaws.com/Employee_and_Community_Ownership_in_Australia_Pre-release_Summary_2026-04-19.pdf"
+            target="_blank"
+            rel="noopener"
+            class="callout-link"
+          >
+            Read the pre-release summary (PDF) →
+          </a>
+        </p>
+      </aside>
 
       <p class="subsection-title">The white paper will cover:</p>
       <ul class="white-paper-list">
@@ -103,6 +121,16 @@ import Layout from '../layouts/Layout.astro';
         We welcome your interest in this work. If you'd like to stay informed about the white paper's
         release or contribute insights, please get in touch.
       </p>
+
+      <div class="launch-photos">
+        <figure>
+          <img src="/images/launch/ecoh-launch-1.jpg" alt="ECOH white paper launch event at The Kelvin Club, Melbourne" loading="lazy" width="1000" height="667" />
+        </figure>
+        <figure>
+          <img src="/images/launch/ecoh-launch-2.jpg" alt="ECOH white paper launch event at The Kelvin Club, Melbourne" loading="lazy" width="667" height="1000" />
+        </figure>
+      </div>
+      <p class="photo-credit">Photos from the launch event, 21 April 2026. Photo credit: Eric Algra.</p>
     </div>
   </section>
 
@@ -334,6 +362,68 @@ import Layout from '../layouts/Layout.astro';
 
   .white-paper-list strong {
     color: #2563eb;
+  }
+
+  .pre-release-callout {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .pre-release-callout h4 {
+    color: #2563eb;
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .pre-release-callout p {
+    margin-bottom: 0.5rem;
+    font-size: 0.98rem;
+  }
+
+  .pre-release-callout p:last-child {
+    margin-bottom: 0;
+  }
+
+  .callout-link {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .callout-link:hover {
+    text-decoration: underline;
+  }
+
+  .launch-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .launch-photos figure {
+    flex: 1 1 280px;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .launch-photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .photo-credit {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
   }
 
   ul {
