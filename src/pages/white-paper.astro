@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
         in Australia.
       </p>
 
-      <aside class="pre-release-callout">
+      <aside class="callout">
         <h4>Pre-release summary now available</h4>
         <p>
           Ahead of the full release, we've published a pre-release executive summary together with
@@ -72,6 +72,19 @@ import Layout from '../layouts/Layout.astro';
         release or contribute insights, please get in touch.
       </p>
 
+      <aside class="callout">
+        <h4>Launch event recording</h4>
+        <p>
+          The white paper was launched at The Kelvin Club in Melbourne on 21 April 2026. A recording
+          of the event is available on YouTube.
+        </p>
+        <p>
+          <a href="https://youtu.be/Q8u_fkZKxLo" target="_blank" rel="noopener" class="callout-link">
+            Watch the launch event on YouTube →
+          </a>
+        </p>
+      </aside>
+
       <div class="launch-photos">
         <figure class="landscape">
           <img src="/images/launch/ecoh-launch-1.jpg" alt="ECOH white paper launch event at The Kelvin Club, Melbourne" loading="lazy" width="1000" height="667" />
@@ -81,6 +94,19 @@ import Layout from '../layouts/Layout.astro';
         </figure>
       </div>
       <p class="photo-credit">Photos from the launch event, 21 April 2026. Photo credit: Eric Algra.</p>
+
+      <aside class="callout">
+        <h4>Further viewing: Graeme Nuttall on employee ownership</h4>
+        <p>
+          An earlier presentation from Graeme Nuttall, a leading international voice on employee
+          ownership trusts.
+        </p>
+        <p>
+          <a href="https://youtu.be/hlQ-hCWJHag" target="_blank" rel="noopener" class="callout-link">
+            Watch on YouTube →
+          </a>
+        </p>
+      </aside>
     </div>
   </div>
 </Layout>
@@ -141,7 +167,7 @@ import Layout from '../layouts/Layout.astro';
     color: #2563eb;
   }
 
-  .pre-release-callout {
+  .callout {
     background: #eff6ff;
     border-left: 4px solid #2563eb;
     border-radius: 4px;
@@ -149,18 +175,18 @@ import Layout from '../layouts/Layout.astro';
     margin: 2rem 0;
   }
 
-  .pre-release-callout h4 {
+  .callout h4 {
     color: #2563eb;
     font-size: 1.15rem;
     margin: 0 0 0.75rem 0;
   }
 
-  .pre-release-callout p {
+  .callout p {
     margin-bottom: 0.75rem;
     font-size: 1rem;
   }
 
-  .pre-release-callout p:last-child {
+  .callout p:last-child {
     margin-bottom: 0;
   }
 
