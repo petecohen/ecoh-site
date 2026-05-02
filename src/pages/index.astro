@@ -123,10 +123,10 @@ import Layout from '../layouts/Layout.astro';
       </p>
 
       <div class="launch-photos">
-        <figure>
+        <figure class="landscape">
           <img src="/images/launch/ecoh-launch-1.jpg" alt="ECOH white paper launch event at The Kelvin Club, Melbourne" loading="lazy" width="1000" height="667" />
         </figure>
-        <figure>
+        <figure class="portrait">
           <img src="/images/launch/ecoh-launch-2.jpg" alt="ECOH white paper launch event at The Kelvin Club, Melbourne" loading="lazy" width="667" height="1000" />
         </figure>
       </div>
@@ -402,12 +402,23 @@ import Layout from '../layouts/Layout.astro';
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+    align-items: flex-start;
   }
 
   .launch-photos figure {
-    flex: 1 1 280px;
     margin: 0;
     min-width: 0;
+  }
+
+  /* Flex-grow set to each photo's aspect ratio (width/height).
+     With basis 0, the figures take horizontal space proportional to their
+     aspect ratio — so when the row has equal height, images line up perfectly. */
+  .launch-photos figure.landscape {
+    flex: 1.499 1 0;
+  }
+
+  .launch-photos figure.portrait {
+    flex: 0.667 1 0;
   }
 
   .launch-photos img {
@@ -416,6 +427,14 @@ import Layout from '../layouts/Layout.astro';
     display: block;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* On narrow screens, stack the photos full-width. */
+  @media (max-width: 600px) {
+    .launch-photos figure.landscape,
+    .launch-photos figure.portrait {
+      flex: 1 1 100%;
+    }
   }
 
   .photo-credit {
