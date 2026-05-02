@@ -1,0 +1,10 @@
+# Netlify build configuration for continuous deployment from GitHub.
+# This is the file Netlify reads at build time. The local .netlify/netlify.toml
+# is CLI state (gitignored) and not used by Netlify CI.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
