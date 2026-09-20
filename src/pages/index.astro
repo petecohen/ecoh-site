@@ -14,6 +14,34 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <section id="upcoming" class="section section-event">
+    <div class="container">
+      <p class="event-eyebrow">Upcoming</p>
+      <h2>ECOH at the 20th ICA Asia-Pacific Research Conference</h2>
+      <p class="event-meta">
+        Wednesday 7 October 2026 · Amphitheatre, Level 2, Monash College, 750 Collins St,
+        Docklands, Melbourne
+      </p>
+      <p>
+        ECOH will be presenting at <em>Transforming Cooperatives for the Future</em>, the 20th ICA
+        Asia-Pacific Cooperative Research Conference, hosted by the Mutual Value Lab at Monash
+        Business School in partnership with the ICA-AP Committee on Cooperative Research and the
+        Business Council of Co-operatives and Mutuals. The two-day conference runs 6–7 October 2026,
+        with academic and practitioner presentations on the second day.
+      </p>
+      <p>
+        <a
+          href="https://www.monash.edu/business/events/transforming-cooperatives-for-the-future-20th-ica-asia-pacific-research-conference"
+          target="_blank"
+          rel="noopener"
+          class="callout-link"
+        >
+          Conference details and registration →
+        </a>
+      </p>
+    </div>
+  </section>
+
   <section id="about" class="section">
     <div class="container">
       <h2>About ECOH</h2>
@@ -301,6 +329,27 @@ import Layout from '../layouts/Layout.astro';
 
   .section-alt {
     background: #f9fafb;
+  }
+
+  .section-event {
+    background: #eff6ff;
+    border-top: 3px solid #2563eb;
+    border-bottom: 1px solid #dbeafe;
+  }
+
+  .event-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 0.35rem;
+  }
+
+  .event-meta {
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 0.75rem;
   }
 
   .container {
