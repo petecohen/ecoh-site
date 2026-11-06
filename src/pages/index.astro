@@ -28,6 +28,15 @@ import Layout from '../layouts/Layout.astro';
         Business Council of Co-operatives and Mutuals. The two-day conference ran on 6–7 October
         2026, with academic and practitioner presentations on the second day.
       </p>
+      <figure class="event-photo">
+        <img
+          src="/images/events/ecoh-ica-conference-2026.jpg"
+          alt="The ECOH team at the 20th ICA Asia-Pacific Research Conference, Monash College, Docklands"
+          loading="lazy"
+          width="1200"
+          height="900"
+        />
+      </figure>
       <p>
         <a
           href="https://www.monash.edu/business/events/transforming-cooperatives-for-the-future-20th-ica-asia-pacific-research-conference"
@@ -343,6 +352,18 @@ import Layout from '../layouts/Layout.astro';
     font-weight: 700;
     color: #2563eb;
     margin-bottom: 0.35rem;
+  }
+
+  .event-photo {
+    margin: 1.25rem 0;
+    max-width: 480px;
+  }
+
+  .event-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(15, 39, 68, 0.1);
   }
 
   .event-meta {
