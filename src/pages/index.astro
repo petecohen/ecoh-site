@@ -21,32 +21,36 @@ import Layout from '../layouts/Layout.astro';
       <p class="event-meta">
         Wednesday 7 October 2026 · Monash College, 750 Collins St, Docklands, Melbourne
       </p>
-      <p>
-        ECOH presented at <em>Transforming Cooperatives for the Future</em>, the 20th ICA
-        Asia-Pacific Cooperative Research Conference, hosted by the Mutual Value Lab at Monash
-        Business School in partnership with the ICA-AP Committee on Cooperative Research and the
-        Business Council of Co-operatives and Mutuals. The two-day conference ran on 6–7 October
-        2026, with academic and practitioner presentations on the second day.
-      </p>
-      <figure class="event-photo">
-        <img
-          src="/images/events/ecoh-ica-conference-2026.jpg"
-          alt="The ECOH team at the 20th ICA Asia-Pacific Research Conference, Monash College, Docklands"
-          loading="lazy"
-          width="1200"
-          height="900"
-        />
-      </figure>
-      <p>
-        <a
-          href="https://www.monash.edu/business/events/transforming-cooperatives-for-the-future-20th-ica-asia-pacific-research-conference"
-          target="_blank"
-          rel="noopener"
-          class="callout-link"
-        >
-          About the conference →
-        </a>
-      </p>
+      <div class="event-body">
+        <div class="event-text">
+          <p>
+            ECOH presented at <em>Transforming Cooperatives for the Future</em>, the 20th ICA
+            Asia-Pacific Cooperative Research Conference, hosted by the Mutual Value Lab at Monash
+            Business School in partnership with the ICA-AP Committee on Cooperative Research and the
+            Business Council of Co-operatives and Mutuals. The two-day conference ran on 6–7 October
+            2026, with academic and practitioner presentations on the second day.
+          </p>
+          <p>
+            <a
+              href="https://www.monash.edu/business/events/transforming-cooperatives-for-the-future-20th-ica-asia-pacific-research-conference"
+              target="_blank"
+              rel="noopener"
+              class="callout-link"
+            >
+              About the conference →
+            </a>
+          </p>
+        </div>
+        <figure class="event-photo">
+          <img
+            src="/images/events/ecoh-ica-conference-2026.jpg"
+            alt="The ECOH team at the 20th ICA Asia-Pacific Research Conference, Monash College, Docklands"
+            loading="lazy"
+            width="1200"
+            height="900"
+          />
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -354,9 +358,33 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 0.35rem;
   }
 
+  .event-body {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .event-text {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
   .event-photo {
-    margin: 1.25rem 0;
-    max-width: 480px;
+    flex: 0 0 340px;
+    margin: 0;
+  }
+
+  @media (max-width: 720px) {
+    .event-body {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .event-photo {
+      flex: none;
+      width: 100%;
+      max-width: 400px;
+    }
   }
 
   .event-photo img {
